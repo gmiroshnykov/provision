@@ -8,7 +8,7 @@ apt-get update
 #apt-get upgrade -y
 
 echo "Running 'apt-get install ...'"
-apt-get install -y build-essential git
+apt-get install -y build-essential git zlib1g-dev libssl-dev
 
 if [ ! -d "/tmp/ruby-build" ]; then
     echo "Installing ruby-build"
