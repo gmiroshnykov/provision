@@ -39,14 +39,4 @@ if [ $? -ne 0 ]; then
     gem install bundler
 fi
 
-gem list --local | grep -q chef
-if [ $? -ne 0 ]; then
-    echo "Installing Chef"
-    gem install chef
-fi
-
-gem list --local | grep -q librarian
-if [ $? -ne 0 ]; then
-    echo "Installing Librarian"
-    gem install librarian
-fi
+sudo bundle install
