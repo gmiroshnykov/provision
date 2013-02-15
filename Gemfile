@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-gem "chef", "10.16"
+gem "chef", "~> 10.22"
 gem "librarian"
